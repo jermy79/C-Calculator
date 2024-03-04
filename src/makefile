@@ -11,8 +11,3 @@ $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	rm -f $(OBJS) $(EXEC)
-install:
-	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp $(EXEC) $(DESTDIR)$(PREFIX)/bin
-uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/$(EXEC)
