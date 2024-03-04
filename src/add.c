@@ -9,7 +9,7 @@ void add(){
 		printf("\n\nHow many numbers would you want to add?\n");
 		scanf("%d", &amount);
 		printf("\nWhat number you want to add?\n");
-		for(int i = 0; i <amount-1;i++){
+		for(int i = 0; i <amount;i++){
 			scanf("%d",&num);
 			sum += num;
 		}
